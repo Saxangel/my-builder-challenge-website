@@ -122,6 +122,7 @@ body::before {
 .fact-card h4 {
   font-size: 18px;
   margin-bottom: 1px;
+  color: #03A9F4;
 }
 .fact-card p {
   font-size: 16px;
