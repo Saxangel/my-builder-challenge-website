@@ -115,13 +115,13 @@ body::before {
   gap: 16px;
 }
 .fact-card {
-  border: 1px solid #ff9900;
+  border: 3px solid #ff9900;
   padding: 60px;
   border-radius: 20px;
 }
 .fact-card h4 {
   font-size: 18px;
-  margin-bottom: 12px;
+  margin-bottom: 1px;
 }
 .fact-card p {
   font-size: 16px;
