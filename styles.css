@@ -158,7 +158,7 @@ body::before {
     right: 40px;
     width: 40px;
     height: 40px;
-    background: linear-gradient(135deg, #ec4899 0%, #be185d 100%);
+    background: linear-gradient(135deg, 0%, #be185d 100%);
     border-radius: 6px;
     opacity: 0.9;
 }
