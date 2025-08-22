@@ -224,7 +224,7 @@ body::before {
 .form-group textarea {
     width: 100%;
     padding: 12px 16px;
-    border: 1px solid #e5e7eb;
+    border: 1px solid #e5e7e;
     border-radius: 6px;
     font-size: 16px;
     font-family: inherit;
@@ -250,7 +250,7 @@ body::before {
     background: #7877c6;
     color: white;
     padding: 12px 32px;
-    border: none;
+    border: 3px solid #ff9900;
     border-radius: 6px;
     font-weight: 500;
     font-size: 16px;
