@@ -54,6 +54,16 @@ body::before {
   letter-spacing: -0.02em;
   animation: animate ease-in-out 1s infinite alternate;
 }
+
+@keyframes animate {
+  from {
+    text-shadow: 0 0 20px #ff9900;
+  }
+  to {
+    text-shadow: 0 0 30px #ff9900, 0 0 10px #ff9900;
+  }
+}
+
 .tagline {
   font-size: 18px;
   margin-bottom: 16px;
