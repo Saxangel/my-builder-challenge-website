@@ -6,23 +6,40 @@
   <title>Gabriel Taiwo Olaleye - Personal Website</title>
   <link rel="stylesheet" href="styles.css">
   <style>
-    /* Force non-faded text color */
-    body, h1, h2, h3, p, li, a {
-      color: #000; /* black text */
+    /* Override text colors for visibility on dark background */
+    main, main h1, main h2, main h3, main p, main li, main a {
+      color: #fff;
     }
-    /* Optional: remove spacing issues */
-    p, h2, h3, ul {
-      margin: 0 0 10px 0;
-      line-height: 1.6;
-    }
-    ul {
-      padding-left: 20px;
-    }
+
+    /* Button-style AWS links */
     .aws-link {
       display: inline-block;
-      margin-right: 10px;
+      margin: 5px 10px 5px 0;
+      padding: 8px 16px;
+      background-color: #FF9900;
+      color: #000;
       text-decoration: none;
-      color: #000; /* ensure links are black, not faded */
+      border-radius: 8px;
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+    .aws-link:hover {
+      background-color: #e68a00;
+      transform: translateY(-1px);
+    }
+
+    /* About Me section spacing */
+    .about-me {
+      text-align: left;
+      margin-bottom: 40px;
+    }
+    .about-me p {
+      text-align: justify;
+      margin-bottom: 16px;
+    }
+    .about-me ul {
+      padding-left: 20px;
+      line-height: 1.6;
     }
   </style>
 </head>
@@ -32,31 +49,29 @@
       <img src="profile.jpg" alt="Gabriel Taiwo Olaleye" class="profile-photo">
       <h1>Gabriel Taiwo Olaleye</h1>
       <p class="tagline">DevOps Engineer | Solutions Architect | AWS Evangelist</p>
-      <a href="https://builder.aws.com/community/@saxangel" target="_blank" class="aws-link">AWS Builder Center Profile</a>
+      <a href="https://builder.aws.com/community/@saxangel" target="_blank" class="aws-link">AWS Builder Center</a>
       <a href="https://www.linkedin.com/in/gabrietaiwoolaleye/" target="_blank" class="aws-link">LinkedIn</a>
       <a href="https://github.com/Saxangel" target="_blank" class="aws-link">Github</a>
       <a href="https://www.youtube.com/@cloudpreneur" target="_blank" class="aws-link">YouTube</a>
     </section>
 
     <section class="about-me">
-      <h2 style="text-align: left;">About Me</h2>
-      <p align="justify">
+      <h2>About Me</h2>
+      <p>
         Hi, I’m <strong>Gabriel Olaleye</strong>. My journey began in <strong>Chemistry</strong>, 
         transitioned into <strong>Pharmaceutical Science</strong>, and finally to <strong>Cloud Technology</strong>. 
         Along the way, I discovered that curiosity, determination, and a love for problem-solving 
         can turn any career pivot into a rewarding opportunity.
       </p>
-      <p align="justify">
+      <p>
         Today, I work as a <strong>Cloud Solution Architect</strong> and <strong>DevOps Engineer</strong>, 
         building secure, scalable, and efficient cloud solutions that drive business value. 
         I combine the analytical mindset I developed in science with hands-on cloud expertise 
         to create systems that make an impact.
       </p>
-    </section>
 
-    <section style="text-align: left; margin: 20px 0;">
       <h3>What I bring to the table:</h3>
-      <ul style="list-style-type: disc; padding-left: 20px; line-height: 1.6;">
+      <ul>
         <li>AWS architecture, DevOps, and cloud automation</li>
         <li>A strong foundation in analytical thinking and problem-solving</li>
         <li>Passion for continuous learning and innovation</li>
@@ -64,79 +79,5 @@
       </ul>
     </section>
   </main>
-</body>
-</html>
-
-
-    
-<p>I believe that no matter your background, the cloud opens up limitless possibilities. I’m excited to share my journey and help others turn their curiosity into real-world solutions.</p>
-            
-        </section>
-
-        <section class="fun-facts">
-            <h3>Fun Facts About Me</h3>
-            <div class="facts-grid">
-                <div class="fact-card">
-                    <h4>I am a self-taught Saxophonist 🎷 </h4>
-                    <p>I am currently working on <a href="https://builder.aws.com/content/31C2WxIDSQive7q2Dv5xNFCmYJj/aws-builder-challenge-2-build-a-website-on-the-cloud?trk=86c76c09-e8f4-4138-badc-604ce7bc5d77&sc_channel=el" target="_blank">AWS Builder Challenge #2: Build a website on the cloud!</a></p>
-                </div>
-                <div class="fact-card">
-                    <h4> Learning Goal 🎯 </h4>
-                    <p>My learning goal is to build my skills one AWS service at a time - S3, CloudFront, and beyond!</p>
-                </div>
-                <div class="fact-card">
-                    <h4> Project 💡 </h4>
-                    <p>This website is hosted on Amazon S3 with CloudFront for global delivery!</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="aws-journey">
-            <h3>AWS Builder Challenge #2</h3>
-            <p>I'm currently working on the "Build a website on the cloud" challenge, learning to deploy websites using AWS S3 and CloudFront. This site is part of my challenge progress!</p>
-            <a href="https://builder.aws.com/content/31C2WxIDSQive7q2Dv5xNFCmYJj/aws-builder-challenge-2-build-a-website-on-the-cloud?trk=86c76c09-e8f4-4138-badc-604ce7bc5d77&sc_channel=el" target="_blank" class="cta-button">View Challenge Details</a>
-        </section>
-
-        <!-- CONTACT FORM SECTION - Added for user contact functionality -->
-        <section class="contact-form">
-            <h3>Get In Touch</h3>
-            <p>Have a question or want to connect? Send me a message!</p>
-            <!-- Form message container for success/error messages -->
-            <div id="form-message" class="form-message" style="display: none;"></div>
-            <form class="contact-form-container">
-                <!-- Contact form input fields -->
-                <div class="form-group">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <!-- Contact form submit button -->
-                <button type="submit" class="contact-submit-btn">Send Message</button>
-            </form>
-        </section>
-
-
-        
-        <!-- END CONTACT FORM SECTION -->
-    </main>
-
-    <footer>
-        <p>&copy; 2025 Gabriel Taiwo Olaleye. Built with ❤️ on AWS</p>
-    </footer>
-    
-
-
-
-
-
-    <!-- Contact form JavaScript -->
-    <script src="script.js"></script>
 </body>
 </html>
