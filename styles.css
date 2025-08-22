@@ -46,9 +46,13 @@ body::before {
   text-align: center;
 }
 .hero h1 {
+  color: #059669;
+  text-transform: uppercase;
   font-size: 48px;
   font-weight: 700;
-  margin: 20px 0 8px;
+  margin: 20px 0 8px 0;
+  letter-spacing: -0.02em;
+  animation: animate ease-in-out 1s infinite alternate;
 }
 .tagline {
   font-size: 18px;
