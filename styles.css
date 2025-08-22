@@ -117,7 +117,7 @@ body::before {
 .fact-card {
   border: 1px solid #ff9900;
   padding: 60px;
-  border-radius: 15px;
+  border-radius: 20px;
 }
 .fact-card h4 {
   font-size: 18px;
