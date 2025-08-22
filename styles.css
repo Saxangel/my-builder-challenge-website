@@ -51,13 +51,13 @@ body::before {
 }
 
 .aws-link {
-  background: #020203;
+  background: #653d07;
   color: white;
   padding: 3px 6px;
   text-decoration: none;
-  border-radius: 8px;
+  border-radius: 16px;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   transition: all 0.2s ease;
   margin-top: rem;
   display: inline-block;
